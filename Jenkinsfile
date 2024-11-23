@@ -12,8 +12,7 @@ pipeline {
         stage('Execute Python Program') {
             steps {
                 script {
-                    def pythonFile = 'file2.py'
-                    bat "python ${pythonFile}"
+                    bat '"C:\\Program Files\\Python312\\python.exe" "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\week4\\file2.py"'
                 }
             }
         }
