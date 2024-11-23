@@ -13,7 +13,7 @@ pipeline {
             steps {
                 script {
                     def pythonFile = 'file2.py'
-                    bat "python ${pythonFile}"
+                    bat "python ${pythonFile} && python file2"
                 }
             }
         }
