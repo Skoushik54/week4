@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-                stage('Execute Java Program') {
+        stage('Execute Java Program') {
             steps {
                 script {
                     def javaFile = 'file1.java'
@@ -13,7 +13,7 @@ pipeline {
             steps {
                 script {
                     def pythonFile = 'file2.py'
-                    bat "python ${pythonFile} && python file2"
+                    bat "C:\\Users\\samba\\AppData\\Local\\Microsoft\\WindowsApps\\python ${pythonFile}"
                 }
             }
         }
