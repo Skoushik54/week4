@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Execute Java Program') {
+                stage('Execute Java Program') {
             steps {
                 script {
                     def javaFile = 'file1.java'
@@ -13,8 +13,7 @@ pipeline {
             steps {
                 script {
                     def pythonFile = 'file2.py'
-                    def pythonDir = 'C:\\Users\\samba\\OneDrive\\Desktop\\devops lab\\week4'  // Corrected with escaped backslashes
-                    bat "cd ${pythonDir} && python ${pythonFile}"
+                    bat "python ${pythonFile}"
                 }
             }
         }
