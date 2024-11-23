@@ -13,7 +13,8 @@ pipeline {
             steps {
                 script {
                     def pythonFile = 'file2.py'
-                    bat "C:\\Users\\samba\\AppData\\Local\\Microsoft\\WindowsApps\\python ${pythonFile}"
+                    def pythonDir = 'C:\\Users\\samba\\OneDrive\\Desktop\\devops lab\\week4'  // Corrected with escaped backslashes
+                    bat "cd ${pythonDir} && python ${pythonFile}"
                 }
             }
         }
